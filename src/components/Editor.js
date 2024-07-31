@@ -57,6 +57,7 @@ const CodeEditor = ({ onCompileResult }) => {
         defaultLanguage="python"
         defaultValue="# Start coding"
         onMount={handleEditorDidMount}
+        theme="vs-dark" // Set the editor theme to vs-dark
       />
       <button onClick={handleCompile} className="button">
         Compile

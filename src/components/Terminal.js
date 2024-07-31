@@ -46,7 +46,7 @@ const CodeTerminal = ({ compileResult }) => {
   // Display compile result
   useEffect(() => {
     if (terminalInstanceRef.current && compileResult) {
-      terminalInstanceRef.current.writeln(`Compile result:\n${compileResult}`);
+      terminalInstanceRef.current.writeln(`Compile result:${compileResult}`);
     }
   }, [compileResult]);
 
